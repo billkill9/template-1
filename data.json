@@ -31,7 +31,7 @@
           "image": true,
           "stats": true
         },
-        "label": "ABOUT ME",
+        "label": "ABOUT ME jinku",
         "title": ["CRAFTING", "THE VOID"],
         "description": "I'm a multidisciplinary designer exploring the intersection of minimalism, fashion, and digital art. Every project is an exercise in subtraction — stripping away the unnecessary until only the essential remains.",
         "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&q=80&w=800",
@@ -44,7 +44,7 @@
       }
     },
     {
-      "type": "education",
+      "type": "education bul bul ",
       "data": {
         "visible": true,
         "showInNav": true,
