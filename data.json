@@ -1,0 +1,170 @@
+{
+  "nav": {
+    "logo": "AVI",
+    "links": []
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "data": {
+        "visible": true,
+        "visibility": {
+          "title": true,
+          "tagline": true,
+          "image": true
+        },
+        "title": "ECLIPSE",
+        "tagline": "Minimalism is not about having less, it's about making room for more",
+        "image": "https://images.unsplash.com/photo-1777276516205-ec88d271e9b9?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "alt": "Fashion"
+      }
+    },
+    {
+      "type": "about",
+      "data": {
+        "visible": true,
+        "showInNav": true,
+        "visibility": {
+          "label": true,
+          "title": true,
+          "description": true,
+          "image": true,
+          "stats": true
+        },
+        "label": "ABOUT ME",
+        "title": ["CRAFTING", "THE VOID"],
+        "description": "I'm a multidisciplinary designer exploring the intersection of minimalism, fashion, and digital art. Every project is an exercise in subtraction — stripping away the unnecessary until only the essential remains.",
+        "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&q=80&w=800",
+        "imageAlt": "Portrait",
+        "stats": [
+          { "number": "08+", "label": "Years Experience" },
+          { "number": "120+", "label": "Projects Done" },
+          { "number": "40+", "label": "Clients" }
+        ]
+      }
+    },
+    {
+      "type": "education",
+      "data": {
+        "visible": true,
+        "showInNav": true,
+        "visibility": {
+          "label": true,
+          "title": true,
+          "items": true
+        },
+        "label": "EDUCATION",
+        "title": ["FORMATIVE", "YEARS"],
+        "items": [
+          { "year": "2018 — 2020", "degree": "MA Digital Design", "school": "Royal College of Art", "description": "Focused on interactive minimalism and spatial design. <br> Thesis on negative space in digital experiences." },
+          { "year": "2014 — 2018", "degree": "BA Graphic Design", "school": "Central Saint Martins", "description": "Foundation in typography, branding, and visual systems. Graduated with first-class honours." },
+          { "year": "2012 — 2014", "degree": "Foundation Art & Design", "school": "UAL London", "description": "Exploratory year across fine art, photography, and communication design." }
+        ]
+      }
+    },
+    {
+      "type": "publications",
+      "data": {
+        "visible": true,
+        "showInNav": true,
+        "visibility": {
+          "label": true,
+          "title": true,
+          "items": true
+        },
+        "label": "PUBLICATIONS",
+        "title": ["WRITTEN", "WORK"],
+        "items": [
+          { "year": "2025", "source": "Design Week", "title": "The Economics of Negative Space", "description": "How minimalism drives value in modern brand identity systems.", "href": "#" },
+          { "year": "2024", "source": "AIGA Journal", "title": "Digital Brutalism: A Retrospective", "description": "Examining the raw aesthetic movement through a contemporary lens.", "href": "#" },
+          { "year": "2023", "source": "It's Nice That", "title": "Interview: Finding Clarity in Constraint", "description": "A conversation on process, reduction, and creative limitations.", "href": "#" },
+          { "year": "2022", "source": "Eye Magazine", "title": "Typography as Atmosphere", "description": "Exploring how type choices shape emotional tone in editorial design.", "href": "#" }
+        ]
+      }
+    },
+    {
+      "type": "research",
+      "data": {
+        "visible": true,
+        "showInNav": true,
+        "visibility": {
+          "label": true,
+          "title": true,
+          "items": true
+        },
+        "label": "RESEARCH",
+        "title": ["ONGOING", "PROJECTS"],
+        "items": [
+          { "tag": "2019 — Present", "title": "Perception of Empty Space in Digital Interfaces", "description": "Investigating how users cognitively process negative space and its effect on information retention across screen-based media.", "href": "#" },
+          { "tag": "2021 — 2023", "title": "Generative Typography Systems", "description": "Developing algorithmic approaches to type design that respond to environmental data, creating dynamic and context-aware letterforms.", "href": "#" },
+          { "tag": "2020 — 2022", "title": "Minimalism & Accessibility", "description": "Exploring the intersection of reductive design principles and inclusive accessibility standards in web and print media.", "href": "#" },
+          { "tag": "2018 — 2021", "title": "Materiality in Virtual Environments", "description": "Researching how digital textures and simulated materials influence emotional response in immersive 3D spaces.", "href": "#" }
+        ]
+      }
+    },
+    {
+      "type": "contact",
+      "data": {
+        "visible": true,
+        "showInNav": true,
+        "visibility": {
+          "label": true,
+          "title": true,
+          "intro": true,
+          "image": true,
+          "form": false,
+          "contactInfo": true
+        },
+        "label": "CONTACT",
+        "title": ["GET IN", "TOUCH"],
+        "intro": "Have a project in mind or just want to say hello? Drop me a message.",
+        "contactInfo": {
+          "address": "123 Minimalist Lane, Berlin, Germany",
+          "phone": "+49 30 1234 5678",
+          "email": "hello@avi.studio"
+        },
+        "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800",
+        "imageAlt": "Contact",
+        "fields": [
+          { "type": "text", "placeholder": "Name", "required": true, "half": true },
+          { "type": "email", "placeholder": "Email", "required": true, "half": true },
+          { "type": "text", "placeholder": "Subject", "required": false, "half": false },
+          { "type": "textarea", "placeholder": "Message", "required": true, "rows": 5 }
+        ],
+        "button": "SEND MESSAGE"
+      }
+    },
+    {
+      "type": "footer",
+      "data": {
+        "visible": true,
+        "visibility": {
+          "logo": true,
+          "tagline": true,
+          "columns": true,
+          "copyright": true
+        },
+        "logo": "AVI",
+        "tagline": "Design with love.",
+        "columns": [
+          {
+            "links": [
+              { "label": "Collection", "href": "#" },
+              { "label": "Vision", "href": "#" },
+              { "label": "Shop", "href": "#" }
+            ]
+          },
+          {
+            "heading": "Socials",
+            "links": [
+              { "label": "Instagram", "href": "#" },
+              { "label": "Twitter", "href": "#" },
+              { "label": "LinkedIn", "href": "#" }
+            ]
+          }
+        ],
+        "copyright": "Designed by Academic Visuals Initiative — an open-source, non-profit project supporting academic visibility. © 2026 All rights reserved."
+      }
+    }
+  ]
+}
