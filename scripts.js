@@ -188,7 +188,7 @@ const renderers = {
 document.addEventListener('contextmenu', e => e.preventDefault());
 
 (async () => {
-  const res = await fetch('data.json');
+  const res = await fetch('data.json?_=' + Date.now());
   const json = await res.json();
 
   document.querySelector('nav .logo').textContent = json.nav.logo;
@@ -200,20 +200,29 @@ document.addEventListener('contextmenu', e => e.preventDefault());
   for (const section of json.sections) {
     if (section.data.visible === false) continue;
 
-    const div = document.createElement('div');
-    div.id = 'section-' + section.type;
-    div.innerHTML = renderers[section.type](section.data);
-    app.appendChild(div);
+    try {
+      const fn = renderers[section.type];
+      if (typeof fn !== 'function') {
+        console.warn('No renderer for section type:', section.type);
+        continue;
+      }
+      const div = document.createElement('div');
+      div.id = 'section-' + section.type;
+      div.innerHTML = fn(section.data);
+      app.appendChild(div);
 
-    if (section.data.showInNav && section.data.label) {
-      const li = document.createElement('li');
-      li.innerHTML = `<a href="#section-${section.type}">${section.data.label}</a>`;
-      navList.appendChild(li);
-    }
+      if (section.data.showInNav && section.data.label) {
+        const li = document.createElement('li');
+        li.innerHTML = `<a href="#section-${section.type}">${section.data.label}</a>`;
+        navList.appendChild(li);
+      }
 
-    const initFn = `init${section.type.charAt(0).toUpperCase() + section.type.slice(1)}`;
-    if (typeof window[initFn] === 'function') {
-      window[initFn]();
+      const initFn = `init${section.type.charAt(0).toUpperCase() + section.type.slice(1)}`;
+      if (typeof window[initFn] === 'function') {
+        window[initFn]();
+      }
+    } catch (err) {
+      console.error('Failed to render section:', section.type, err);
     }
   }
 
